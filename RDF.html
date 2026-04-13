@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDF Professional Brochure</title>
+    <style>
+        :root {
+            --primary-green: #1b5e20;
+            --accent-gold: #fbc02d;
+            --text-main: #1a202c;
+            --text-muted: #4a5568;
+            --bg-body: #f7fafc; 
+            --white: #ffffff;
+            --border-light: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            color: var(--text-main);
+        }
+
+        .brochure-container {
+            width: 900px;
+            background-color: var(--white);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+        }
+
+        .header-accent {
+            height: 10px;
+            background: linear-gradient(90deg, var(--primary-green), var(--accent-gold));
+        }
+
+        .logo-hero {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .logo-hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .content-padding {
+            padding: 40px 60px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: var(--primary-green);
+            margin-bottom: 18px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background: var(--accent-gold);
+            margin-right: 12px;
+        }
+
+        p {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            text-align: justify;
+        }
+
+        .top-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .img-wrapper {
+            width: 100%;
+            height: 150px;
+            background: #fdfdfd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px;
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 15px 0;
+        }
+
+        .programs-grid .img-wrapper { height: 100px; border: none; background: #fff; }
+
+        .initiative-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .init-card {
+            background: #f1f8f1; 
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid var(--primary-green);
+        }
+
+        .init-card strong {
+            color: var(--primary-green);
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .init-card p { font-size: 0.85rem; line-height: 1.5; color: var(--text-main); text-align: left;}
+
+        footer {
+            background: #1a202c;
+            color: white;
+            padding: 40px 60px;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+            margin-top: auto;
+        }
+
+        .footer-info h3 { font-size: 1.2rem; color: var(--accent-gold); margin-bottom: 10px; }
+        .footer-info p { color: #cbd5e0; font-size: 0.85rem; text-align: left; }
+
+        .footer-contact {
+            border-left: 1px solid #4a5568;
+            padding-left: 40px;
+        }
+
+        .footer-contact strong { color: var(--accent-gold); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-contact p { font-size: 0.85rem; margin-top: 5px; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="brochure-container">
+        <div class="header-accent"></div>
+        
+        <header class="logo-hero">
+            <img src="Screenshot 2026-04-12 162401.png" alt="RDF Official Logo">
+        </header>
+
+        <main class="content-padding">
+            <section class="section">
+                <div class="top-grid">
+                    <div class="column">
+                        <h2>Aims and Objectives</h2>
+                        <div class="img-wrapper">
+                            <img src="Screenshot 2026-04-12 124005.png" alt="Aims">
+                        </div>
+                        <p>Roshan Development Foundation (RDF) will work as a catalyst and enabler for promoting human dignity. RDF aims to educate and uplift under privileged communities through research, dialogues, and knowledge transfer.</p>
+                    </div>
+
+                    <div class="column">
+                        <h2>Vision & Mission</h2>
+                        <div class="img-wrapper">
+                            <img src="Screenshot 2026-04-12 123935.png" alt="Vision">
+                        </div>
+                        <p><strong>Vision:</strong> A democratic and just society based upon mutual respect, inclusiveness, equality and social justice.</p>
+                        <p style="margin-top: 10px;"><strong>Mission:</strong> Promote participatory democracy and social justice through community development.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Program & Services</h2>
+                <div class="programs-grid">
+                    <div class="img-wrapper"><img src="Screenshot 2026-04-12 124037.png" alt="Program 1"></div>
+                    <div class="img-wrapper"><img src="Screenshot 2026-04-12 123814.png" alt="Program 2"></div>
+                    <div class="img-wrapper"><img src="Screenshot 2026-04-12 124107.png" alt="Program 3"></div>
+                </div>
+                <p>Roshan Development Foundation (RDF) is 
+dedicated to fostering inclusive, just, and 
+sustainable communities through its work in 
+socio-economic development, democratic 
+engagement, and social justice. Our programs 
+are designed to empower vulnerable/under 
+privileged populations by addressing systemic 
+inequalities. 
+We prioritize the active participation of 
+women, youth, and minority groups in 
+shaping economic, political, cultural, and 
+social outcomes. RDF leads initiatives that 
+promote gender equity, social cohesion, and 
+youth empowerment—while advocating for 
+inclusive policies and practices across all 
+sectors of society.</p>
+            </section>
+
+            <section class="section">
+                <h2>Additional Initiatives</h2>
+                <div class="initiative-grid">
+                    <div class="init-card">
+                        <strong>Community Mobilization & Awareness</strong>
+                        <p>Engaging local communities to challenge discriminatory norms and build inclusive leadership.</p>
+                    </div>
+                    <div class="init-card">
+                        <strong>Climate Resilience & Disaster Preparedness</strong>
+                        <p>Promoting environmental sustainability and responsive disaster management strategies.</p>
+                    </div>
+                    <div class="init-card">
+                        <strong>Youth Engagement</strong>
+                        <p>Establishing platforms for youth expression, leadership, and advocacy to address their specific challenges.</p>
+                    </div>
+                    <div class="init-card">
+                        <strong>Media & Academic Partnerships</strong>
+                        <p>Facilitating collaborations that amplify diverse voices and support evidence-based dialogue.</p>
+                    </div>
+                    <div class="init-card">
+                        <strong>Cultural Activities & Celebrations</strong>
+                        <p>We organize festivals, exhibitions, and inter-community cultural events to celebrate diversity, promote harmony, and strengthen social bonds.</p>
+                    </div>
+                    <div class="init-card">
+                        <strong>Dialogue</strong>
+                        <p>Promoting social cohesion through forums, policy engagement, and campaigns on inclusion, human dignity, and social protection.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <h3>Pakistan Office</h3>
+                <p>Through these integrated approaches, RDF strives to build resilient, equitable communities that uphold dignity, diversity, and democratic values.</p>
+            </div>
+            <div class="footer-contact">
+                <strong>Registered Office</strong>
+                <p>299-G, Phase VIII DHA, Lahore, Pakistan</p>
+                <p>Tel: +92-42-37136302</p>
+                <p>Website: www.rdfpk.org</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
